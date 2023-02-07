@@ -44,6 +44,8 @@ Entrar a la carpeta del proyecto creado
 
 #### ***6. Correr el server***
 
+``py manage.py migrate``
+
 ``py manage.py runserver``
 
 Pegar en el navegador la ip de la consola (ejem: http://127.0.0.1:8000)

@@ -14,11 +14,8 @@ Ver la version de django
 
 ``django-admin startapp api``
 
-#### ***3. Volver a correr las migraciones***
 
-``py manage.py migrate``
-
-#### ***4. Registrar aplicacion y libreria Rest Framework en nombreproyecto/settings.py agregar al final de INSTALLED_APPS***
+#### ***3. Registrar aplicacion y libreria Rest Framework en nombreproyecto/settings.py agregar al final de INSTALLED_APPS***
 
     INSTALLED_APPS = [
         'django.contrib.admin',
@@ -27,13 +24,13 @@ Ver la version de django
         'api',
     ]
 
-#### ***5.  Crear superuser***
+#### ***4.  Crear superuser***
 
 ``py manage.py createsuperuser --email admin@example.com --username admin``
 
 Te pedira ingresar password dos veces
 
-#### ***6. Crear un modelo en la aplicación "api", en nombreproyecto/api/models.py***
+#### ***5. Crear un modelo en la aplicación "api", en nombreproyecto/api/models.py***
 
     from django.db import models
 
@@ -45,6 +42,12 @@ Te pedira ingresar password dos veces
         def __str__(self):
             return '{0},{1}'.format(self.apellido,self.nombre)
 
+#### ***6. Crear migracion para Persona y volver a correr las migraciones***
+
+``py manage.py makemigrations``
+
+``py manage.py migrate``
+
 #### ***7. Registrar modelo "Personas" en la app "api", en nombreproyecto/api/admin.py***
 
     from django.contrib import admin
@@ -52,6 +55,12 @@ Te pedira ingresar password dos veces
 
     admin.site.register(Persona)
 
-Con eso ya deberia aparecer en el dashboard de rest framework http://127.0.0.1:8000/admin/, loguear con el admin creado
+#### ***8. Levantar el servidor***
 
 ``py manage.py runserver``
+
+Con eso ya deberia aparecer en el dashboard de rest framework http://127.0.0.1:8000/admin/, loguear con el admin creado
+
+Se deberia mostrar modelos de usuarios, grupos por defecto, más el modelo Persona creado
+
+![Dashboard](./dashbooard_1.png)

@@ -42,7 +42,14 @@ Entrar a la carpeta del proyecto creado
 
 ``cd NombreProyectodjango``
 
-#### ***6. Correr el server***
+
+#### ***6. Configuración hora e idioma, NombreProyectodjango/settings.py***
+
+    LANGUAGE_CODE = 'es-es'
+
+    TIME_ZONE = 'America/Santiago'
+
+#### ***7. Correr el server***
 
 ``py manage.py migrate``
 

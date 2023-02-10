@@ -4,7 +4,7 @@ Una vez creado el proyecto: [Como crear proyecto django](https://github.com/orij
 
 Agregado Django Rest Framewrok: [django rest](https://github.com/orijmm/codigostest/blob/main/django/DjangoApiRest.md) 
 
-Serializado los modelos: [Serializar modelos](https://github.com/orijmm/codigostest/blob/main/django/DjangoApiRest.md) 
+Serializado los modelos: [Serializar modelos](https://github.com/orijmm/codigostest/blob/main/django/Serialize.md) 
 
 Conectar las rutas entre apps: [Urls entre apps](https://github.com/orijmm/codigostest/blob/main/django/ConnectURLBeetweenApps.md) 
 
